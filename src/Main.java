@@ -21,8 +21,8 @@ public class Main {
 
     public static void runMemento() {
         System.out.println("running memento");
-        var editor = new Editor();
-        var history = new History();
+        Editor editor = new Editor();
+        History history = new History();
 
         editor.setContent("a");
         history.push(editor.createState());
