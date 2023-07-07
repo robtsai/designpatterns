@@ -1,10 +1,7 @@
 // Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
 // then press Enter. You can now see whitespace characters in your code.
 
-import com.robtsai.Account;
-import com.robtsai.TaxCalculator;
-import com.robtsai.TaxCalculator2019;
-import com.robtsai.User;
+import com.robtsai.*;
 import com.robtsai.memento.Editor;
 import com.robtsai.memento.History;
 
@@ -35,6 +32,15 @@ public class Main {
         account.withdraw(5);
         System.out.println(account.getBalance());
 
+        var mailService = new MailService();
+        mailService.sendEmail();
+
+        var textBox = new TextBox();
+        textBox.enable();
+
+        drawUIControl(new TextBox());
+        drawUIControl(new CheckBox());
+        
         runMemento();
     }
 
@@ -42,6 +48,9 @@ public class Main {
         return new TaxCalculator2019();
     }
 
+    public static void drawUIControl(UIControl control) {
+        control.draw();
+    }
 
     public static void runMemento() {
         System.out.println("running memento");
