@@ -3,6 +3,7 @@
 
 import com.robtsai.*;
 import com.robtsai.memento.MementoRunner;
+import com.robtsai.state.StateRunner;
 
 public class Main {
     public static void main(String[] args) {
@@ -41,6 +42,8 @@ public class Main {
         drawUIControl(new CheckBox());
 
         MementoRunner.runMemento();
+
+        StateRunner.runState();
 
     }
 

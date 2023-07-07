@@ -2,21 +2,22 @@ package com.robtsai.state;
 
 
 public class Canvas {
-    private ToolType currentTool;
+    private Tool currentTool;
 
+    // Canvas tool is delegating logic to the Tool
     public void mouseDown() {
-
+        currentTool.mouseDown();
     }
 
     public void mouseUp() {
-
+        currentTool.mouseUp();
     }
 
-    public ToolType getCurrentTool() {
+    public Tool getCurrentTool() {
         return currentTool;
     }
 
-    public void setCurrentTool(ToolType currentTool) {
+    public void setCurrentTool(Tool currentTool) {
         this.currentTool = currentTool;
     }
 }

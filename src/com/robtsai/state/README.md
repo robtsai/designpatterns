@@ -6,3 +6,9 @@ Allows object to behave differently if state changes.
 
 
 ![state.png](img%2Fstate.png)
+
+
+## Open Closed Principle
+
+Classes should be open for extension,
+but closed for modification.
