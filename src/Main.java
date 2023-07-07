@@ -40,7 +40,7 @@ public class Main {
 
         drawUIControl(new TextBox());
         drawUIControl(new CheckBox());
-        
+
         runMemento();
     }
 
