@@ -2,8 +2,7 @@
 // then press Enter. You can now see whitespace characters in your code.
 
 import com.robtsai.*;
-import com.robtsai.memento.Editor;
-import com.robtsai.memento.History;
+import com.robtsai.memento.MementoRunner;
 
 public class Main {
     public static void main(String[] args) {
@@ -41,7 +40,8 @@ public class Main {
         drawUIControl(new TextBox());
         drawUIControl(new CheckBox());
 
-        runMemento();
+        MementoRunner.runMemento();
+
     }
 
     public static TaxCalculator getCalculator() {
@@ -52,22 +52,4 @@ public class Main {
         control.draw();
     }
 
-    public static void runMemento() {
-        System.out.println("running memento");
-        Editor editor = new Editor();
-        History history = new History();
-
-        editor.setContent("a");
-        history.push(editor.createState());
-
-        editor.setContent("b");
-        history.push(editor.createState());
-
-        editor.setContent("c");
-        System.out.println(editor.getContent());
-        editor.restore(history.pop());
-        System.out.println(editor.getContent());
-
-
-    }
 }
