@@ -4,8 +4,8 @@ public class MementoRunner {
 
     public static void runMemento() {
         System.out.println("running memento");
-        Editor editor = new Editor();
-        History history = new History();
+        var editor = new Editor();
+        var history = new History();
 
         editor.setContent("a");
         history.push(editor.createState());
