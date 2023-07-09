@@ -14,3 +14,14 @@ In state pattern - we have a single state
 that determines logic.
 
 ![state.png](..%2Fstate%2Fimg%2Fstate.png)
+
+You could also make the ImageStore take
+additional parameters like a 
+Compressor.
+
+This means Compressor is not a private field in
+ImageStore.
+
+Rather when calling store method, 
+we pass in a new JpegCompressor()
+or new PngCopressor()
