@@ -5,6 +5,7 @@ import com.robtsai.*;
 import com.robtsai.iterator.IteratorRunner;
 import com.robtsai.memento.MementoRunner;
 import com.robtsai.state.StateRunner;
+import com.robtsai.strategy.StrategyRunner;
 
 public class Main {
     public static void main(String[] args) {
@@ -47,6 +48,8 @@ public class Main {
         StateRunner.runState();
 
         IteratorRunner.runIterator();
+
+        StrategyRunner.runStrategy();
 
     }
 
