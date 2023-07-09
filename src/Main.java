@@ -2,6 +2,7 @@
 // then press Enter. You can now see whitespace characters in your code.
 
 import com.robtsai.*;
+import com.robtsai.command.CommandRunner;
 import com.robtsai.iterator.IteratorRunner;
 import com.robtsai.memento.MementoRunner;
 import com.robtsai.state.StateRunner;
@@ -53,6 +54,8 @@ public class Main {
         StrategyRunner.runStrategy();
 
         TemplateRunner.runTemplate();
+
+        CommandRunner.runCommand();
 
     }
 
