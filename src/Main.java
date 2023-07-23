@@ -5,6 +5,7 @@ import com.robtsai.*;
 import com.robtsai.command.CommandRunner;
 import com.robtsai.iterator.IteratorRunner;
 import com.robtsai.memento.MementoRunner;
+import com.robtsai.observer.ObserverRunner;
 import com.robtsai.state.StateRunner;
 import com.robtsai.strategy.StrategyRunner;
 import com.robtsai.template.TemplateRunner;
@@ -56,6 +57,8 @@ public class Main {
         TemplateRunner.runTemplate();
 
         CommandRunner.runCommand();
+
+        ObserverRunner.runObserver();
 
     }
 
