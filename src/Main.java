@@ -4,11 +4,14 @@
 import com.robtsai.*;
 import com.robtsai.command.CommandRunner;
 import com.robtsai.iterator.IteratorRunner;
+import com.robtsai.mediator.MediatorRunner;
 import com.robtsai.memento.MementoRunner;
 import com.robtsai.observer.ObserverRunner;
 import com.robtsai.state.StateRunner;
 import com.robtsai.strategy.StrategyRunner;
 import com.robtsai.template.TemplateRunner;
+
+import javax.print.attribute.standard.MediaPrintableArea;
 
 public class Main {
     public static void main(String[] args) {
@@ -59,6 +62,8 @@ public class Main {
         CommandRunner.runCommand();
 
         ObserverRunner.runObserver();
+
+        MediatorRunner.runMediator();
 
     }
 
