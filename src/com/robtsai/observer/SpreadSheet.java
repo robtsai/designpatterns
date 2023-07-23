@@ -1,10 +1,17 @@
 package com.robtsai.observer;
 
 
-// add push style
+// add pull style
+
 public class SpreadSheet implements Observer {
+    private DataSource dataSource;
+
+    public SpreadSheet(DataSource dataSource) {
+        this.dataSource = dataSource;
+    }
+
     @Override
-    public void update(int value) {
-        System.out.println("spreadsheet updated " + value);
+    public void update() {
+        System.out.println("spreadsheet updated " + dataSource.getValue());
     }
 }
