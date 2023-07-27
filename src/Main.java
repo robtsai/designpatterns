@@ -11,6 +11,7 @@ import com.robtsai.state.StateRunner;
 import com.robtsai.strategy.StrategyRunner;
 import com.robtsai.template.TemplateRunner;
 import com.robtsai.chainOfResponsibility.ChainRunner;
+import com.robtsai.visitor.VisitorRunner;
 
 import javax.print.attribute.standard.MediaPrintableArea;
 
@@ -67,6 +68,8 @@ public class Main {
         MediatorRunner.runMediator();
 
         ChainRunner.runChain();
+
+        VisitorRunner.runVisitor();
 
     }
 
