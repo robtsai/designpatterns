@@ -3,6 +3,7 @@
 
 import com.robtsai.*;
 import com.robtsai.command.CommandRunner;
+import com.robtsai.composite.CompositeRunner;
 import com.robtsai.iterator.IteratorRunner;
 import com.robtsai.mediator.MediatorRunner;
 import com.robtsai.memento.MementoRunner;
@@ -70,6 +71,8 @@ public class Main {
         ChainRunner.runChain();
 
         VisitorRunner.runVisitor();
+
+        CompositeRunner.runComposite();
 
     }
 
