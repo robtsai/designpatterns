@@ -2,6 +2,7 @@
 // then press Enter. You can now see whitespace characters in your code.
 
 import com.robtsai.*;
+import com.robtsai.adapter.AdapterRunner;
 import com.robtsai.command.CommandRunner;
 import com.robtsai.composite.CompositeRunner;
 import com.robtsai.iterator.IteratorRunner;
@@ -73,6 +74,8 @@ public class Main {
         VisitorRunner.runVisitor();
 
         CompositeRunner.runComposite();
+
+        AdapterRunner.runAdapter();
 
     }
 
