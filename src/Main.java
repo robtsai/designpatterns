@@ -6,6 +6,7 @@ import com.robtsai.adapter.AdapterRunner;
 import com.robtsai.command.CommandRunner;
 import com.robtsai.composite.CompositeRunner;
 import com.robtsai.decorator.DecoratorRunner;
+import com.robtsai.facade.FacadeRunner;
 import com.robtsai.iterator.IteratorRunner;
 import com.robtsai.mediator.MediatorRunner;
 import com.robtsai.memento.MementoRunner;
@@ -79,6 +80,8 @@ public class Main {
         AdapterRunner.runAdapter();
 
         DecoratorRunner.runDecorator();
+
+        FacadeRunner.runFacade();
 
     }
 
